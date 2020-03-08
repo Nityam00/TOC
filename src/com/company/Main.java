@@ -64,7 +64,8 @@ public class Main {
 		else
 		{
 			System.out.println("The given pushdown automata is not of the form wwR");
-		}	
+		}
+		break;
         }
     }
 }

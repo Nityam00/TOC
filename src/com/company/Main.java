@@ -6,18 +6,16 @@ public class Main {
 
 
     private int top;
+	int r=1;
     public int f1(int arr[],String s1,int j)
     {
         top=j-1;
-        System.out.println("Top of stack is "+ arr[top] +" Yo is "+ s1.charAt(top));
         try {
             for (int i = j; i < s1.length(); i++) {
                 if (arr[top] == (s1.charAt(i) - '0')) {
-                    System.out.println("I match");
                     top--;
                 }
             }
-            System.out.println("Value of top is " + top);
             if (top == -1)
                 return 1;
         }
@@ -37,34 +35,36 @@ public class Main {
                 int l = f1(arr,s1,j);
                 if(l==1)
                 {
-                    System.out.println("Yo");
+		    r=0;
                     return;
                 }
 
             }
 
             arr[j]=(int)(s1.charAt(j)-'0');
-
-            System.out.println("Contents of stack\n");
-            for(int k = 0;k<=j;k++)
-            {
-                System.out.println(arr[k]);
-            }
         }
     }
 
     public static void main(String[] args) {
-	// write your code here
+	    System.out.println("Enter the string of any character set to be checked for wwR form\n");
+            
         while(true) {
             Main m = new Main();
             m.top = -1;
             int arr[] = new int[20];
-            System.out.println("Enter the string of any character set to be checked for wwR form\n");
             Scanner sc = new Scanner(System.in);
             String s1 = sc.next();
             int d = s1.charAt(0) - '0';
             arr[0] = d;
             m.f(arr, s1);
+		if(m.r==0)
+		{
+			System.out.println("The given pushdown automata is of the form wwR");
+		}
+		else
+		{
+			System.out.println("The given pushdown automata is not of the form wwR");
+		}	
         }
     }
 }

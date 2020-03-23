@@ -39,9 +39,7 @@ Output Details:
 
 >>>Step 13) In this second function run a loop j=i, where j runs from the current position of the string to the length of the string
 
->>>Step-14) Keep on comapring the elements on the top of the stack with the elements to be read yet
-
-//  Step 13 is an assumption step in which we assume that while scanning we have reached the middle of the string. 
+>>>Step-14) Keep on comapring the elements on the top of the stack with the elements to be read yet This is an assumption step in which we assume that while scanning we have reached the middle of the string. 
 
 >>>Step 15) If the comparison holds true, keep popping the elements and continue step 13 otherwise return a value of 0
 

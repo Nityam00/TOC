@@ -8,9 +8,12 @@ Input Details:
   
 Output Details:
 
-  Whether the given string is acceptable or not  
+  Whether the given string is acceptable or not
+  
+  ---
+  
 # Algorithm:
-Step 1) Start by opening any Java IDE
+>Step 1) Start by opening any Java IDE
 
 Step 2) Import the necessary packages
 

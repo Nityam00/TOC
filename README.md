@@ -66,7 +66,7 @@ for the same)
   8) IN this way the location of the cdentre was determined
   ### Logic to determine whether palindrome or not:
   9) While popping in step 6, we can simulataneously comapare if the popped character matches the next character of the string. If not, either we have not reached the centre or it is not a palindrome.
-  # Display the output:
+  ### Display the output:
   10) Display it is of the form wwR if all the above conditions are satisfied otherwise not
   
   

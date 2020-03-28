@@ -1,11 +1,19 @@
-/*******************************************************************************
- * Project to check for a string of the form wwR 
- *
- *
- *
- *
- *
- ******************************************************************************/
+/********************************************************************************
+ * This file is part of the project topic: 				     				    *
+ * Project to check for a string of the form wwR 							    *
+ *																				*	
+ * Application:																    *
+ * 	1) Compiler Design															*  
+ *	2) String matching															*
+ *	3) Used in DNA Marking														*
+ ********************************************************************************/
+
+/**
+* @file Main.java
+* @author Nityam
+* @date 10 March,2020
+* @bug No bugs
+*/
 
 package com.company;
 

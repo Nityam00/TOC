@@ -1,3 +1,12 @@
+/*******************************************************************************
+ * Project to check for a string of the form wwR 
+ *
+ *
+ *
+ *
+ *
+ ******************************************************************************/
+
 package com.company;
 
 import java.util.*;// Importing the necessary packages

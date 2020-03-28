@@ -53,4 +53,20 @@ for the same)
 
 >Step 19) End
 
-
+---
+# Logic Used:
+  1) Take string as input
+  2) Push the first character of the String on the stack
+  3) Traverse till the end of the string and keep checking if the top of the stack matches the character of the string being read
+  4) This is done because in a String of form wwR , it is at the centre that the top of the stack will match the next character of the String 
+  5) In an NPDA also we keep on checking at every point whether it matches or not( when it encounters consecutive characters)
+  ### Logic Used to determine the location of the centre
+  6) If it matches keep popping from the stack and compare it with the next character of the string. If the stack becomes empty and also the string reaches the last character while popping, it implies that we were at the centre of the string 
+  7) If it does not reach the end of the String and the stack is empty, it implies that it was not the centre of the string.
+  8) IN this way the location of the cdentre was determined
+  ### Logic to determine whether palindrome or not:
+  9) While popping in step 6, we can simulataneously comapare if the popped character matches the next character of the string. If not, either we have not reached the centre or it is not a palindrome.
+  # Display the output:
+  10) Display it is of the form wwR if all the above conditions are satisfied otherwise not
+  
+  
